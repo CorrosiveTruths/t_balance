@@ -9,7 +9,7 @@ parser.add_argument('path', help = '<path> to raid1 filesystem')
 parser.add_argument('-d', '--debug', help = 'debug mode', action='store_true')
 args = parser.parse_args()
 
-#chunks is a simple list vaddrs with slices not in the most filled dev.
+#chunks is a simple list vaddrs with slices not in the most unalloced dev.
 chunks = []
 with btrfs.FileSystem(args.path) as fs:
     unalloc = []
