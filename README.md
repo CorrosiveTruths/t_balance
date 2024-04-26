@@ -5,7 +5,7 @@ simple_reclaim just selects chunks that aren't on your under-used device and bal
 
 reclaim tries to be a bit cleverer and picks pairs which will restore the unallocatable space with fewer writes.
 
-#how-to
+# how-to
 
 * Install python-btrfs / btrfs.
 * Download script
