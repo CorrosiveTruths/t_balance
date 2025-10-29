@@ -6,6 +6,15 @@ simple_reclaim just selects chunks that aren't on your under-used device and bal
 reclaim tries to be a bit cleverer and picks pairs which will restore the unallocatable space with the least writes.
 # how-to
 
+```bash
+uv tool install git+https://github.com/CorrosiveTruths/t_balance
+# OR
+pip install git+https://github.com/CorrosiveTruths/t_balance
+
+reclaim /path/to/btrfs_volume
+```
+
+# Development / editing
 * Install python-btrfs / btrfs.
 * Download script
 * Run script, e.g. python simple_reclaim.py /home
