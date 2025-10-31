@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reclaim"
+version = "0.1.0"
+description = "Targeted balance to free up chunks in btrfs filesystems"
+requires-python = ">=3.8"
+dependencies = [
+    "btrfs",
+]
+
+[project.scripts]
+reclaim = "reclaim:main"
+
+[tool.setuptools]
+py-modules = ["reclaim"]
